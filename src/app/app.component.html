@@ -1,3 +1,5 @@
 <h1>
-  {{title}}
+  <input type="text" [ngModel]="title" (ngModelChange)="title = $event"> {{title}}
+  <input type="text" [(ngModel)]="testProp">{{testProp}}
+  <router-outlet></router-outlet>
 </h1>
