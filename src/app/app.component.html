@@ -1,5 +1,16 @@
 <h1>
-  <input type="text" [ngModel]="title" (ngModelChange)="title = $event"> {{title}}
-  <input type="text" [(ngModel)]="testProp">{{testProp}}
-  <router-outlet></router-outlet>
+  {{title}}
+  <app-card>
+    <ng-container card-body-attr>
+      <pre>This content is injected inside card component, in place of {{"ng-content"}} tag (Injected by attribute content selector)</pre>
+    </ng-container>
+
+    <card-body-tag>
+      <pre>Insert any HTML here, injected by tag content selector</pre>
+    </card-body-tag>
+
+    <ng-container class="card-body-select">
+      <pre>Insert any HTML here, injected by class content selector</pre>
+    </ng-container>
+  </app-card>
 </h1>

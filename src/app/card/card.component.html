@@ -1,0 +1,13 @@
+<div class="card-container">
+  <div class="header">
+    <h1>This is header of card component</h1>
+  </div>
+  <div class="body">
+    <ng-content select="[card-body-attr]"></ng-content>
+    <ng-content select=""></ng-content>
+    <ng-content select=".card-body-select"></ng-content>
+  </div>
+  <div class="footer">
+    <h4>This is footer of card component</h4>
+  </div>
+</div>
